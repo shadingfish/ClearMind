@@ -47,6 +47,8 @@ public class Chapter1_Activity1_Activity extends AppCompatActivity {
     private long pageOpenTime;
     private long pageCloseTime;
 
+    private final NavigationDrawerHelper navigationDrawerHelper = new NavigationDrawerHelper(this);
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chapter1_activity1);
@@ -79,6 +81,8 @@ public class Chapter1_Activity1_Activity extends AppCompatActivity {
 //        if (checkBox1.isChecked()) {
 //            user_choice.add(checkBox1.getText().toString());
 //        }
+
+        navigationDrawerHelper.setupNavigationDrawer(username);
 
         button_submit.setOnClickListener(new View.OnClickListener() {
             @Override
