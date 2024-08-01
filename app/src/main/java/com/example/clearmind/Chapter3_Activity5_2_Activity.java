@@ -52,6 +52,7 @@ public class Chapter3_Activity5_2_Activity extends AppCompatActivity {
     private HashMap<String, String> hashmap_activity5;
     private  ArrayList<DistortionModel> DistortionModelArrayList;
     private DistortionGVAdapter adapter;
+    private final NavigationDrawerHelper navigationDrawerHelper = new NavigationDrawerHelper(this);
 
     // Distortion elements
     // Done: Magnification example missing!!!
@@ -194,7 +195,7 @@ public class Chapter3_Activity5_2_Activity extends AppCompatActivity {
         });
 
 
-
+        navigationDrawerHelper.setupNavigationDrawer(username);
 
 
         button_home.setOnClickListener(new View.OnClickListener() {

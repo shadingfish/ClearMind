@@ -24,6 +24,8 @@ public class Chapter2_Activity2_2_Activity extends AppCompatActivity {
     private Button button_next;
     private Button button_home;
 
+    private final NavigationDrawerHelper navigationDrawerHelper = new NavigationDrawerHelper(this);
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chapter2_activity2_2);
@@ -35,7 +37,7 @@ public class Chapter2_Activity2_2_Activity extends AppCompatActivity {
         button_back = findViewById(R.id.button_previous);
         button_next = findViewById(R.id.button_next);
 
-
+        navigationDrawerHelper.setupNavigationDrawer(username);
 
         button_home.setOnClickListener(new View.OnClickListener() {
             @Override

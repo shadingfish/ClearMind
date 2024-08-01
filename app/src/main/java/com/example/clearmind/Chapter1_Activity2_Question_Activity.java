@@ -52,6 +52,7 @@ public class Chapter1_Activity2_Question_Activity extends AppCompatActivity {
     private TextView question5_response;
     private long pageOpenTime;
     private long pageCloseTime;
+    private final NavigationDrawerHelper navigationDrawerHelper = new NavigationDrawerHelper(this);
 
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,6 +71,8 @@ public class Chapter1_Activity2_Question_Activity extends AppCompatActivity {
         button_hint3 = findViewById(R.id.hint_3);
         button_hint4 = findViewById(R.id.hint_4);
         button_hint5 = findViewById(R.id.hint_5);
+
+        navigationDrawerHelper.setupNavigationDrawer(username);
 
 
         button_home.setOnClickListener(new View.OnClickListener() {

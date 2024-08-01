@@ -44,6 +44,8 @@ public class Chapter2_Activity1_Activity extends AppCompatActivity {
     private long pageOpenTime;
     private long pageCloseTime;
 
+    private final NavigationDrawerHelper navigationDrawerHelper = new NavigationDrawerHelper(this);
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chapter2_activity1);
@@ -67,6 +69,8 @@ public class Chapter2_Activity1_Activity extends AppCompatActivity {
 
         // handle the status of these check Box
         // when click next, store them to our database?
+
+        navigationDrawerHelper.setupNavigationDrawer(username);
 
         button_home.setOnClickListener(new View.OnClickListener() {
             @Override

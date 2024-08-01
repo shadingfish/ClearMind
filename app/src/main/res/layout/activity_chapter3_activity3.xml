@@ -160,4 +160,8 @@ Gradually increase the duration of your practice in small steps. You might consi
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
+    <include layout="@layout/button_navigation" />
+
+    <include layout="@layout/navigation_drawer" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -25,6 +25,7 @@ public class Chapter3_Activity4_sum_Activity extends AppCompatActivity {
     private Button button_back;
     private Button button_next;
     private Button button_home;
+    NavigationDrawerHelper navigationDrawerHelper = new NavigationDrawerHelper(this);
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,6 +50,8 @@ public class Chapter3_Activity4_sum_Activity extends AppCompatActivity {
                 "You can use your belief statement like a lighthouse during tough times. You can also connect your belief statement with your breathing, making it a part of your new, positive mindset with each breath. For instance, when you breathe in, think, “I am not defined by my challenges,” and when you breathe out, think, “I am learning new ways to improve."
                 ;
         textView.setText(Html.fromHtml(txt_sum));
+
+        navigationDrawerHelper.setupNavigationDrawer(username);
 
         button_home.setOnClickListener(new View.OnClickListener() {
             @Override

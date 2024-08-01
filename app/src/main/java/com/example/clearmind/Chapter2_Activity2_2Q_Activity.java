@@ -53,6 +53,8 @@ public class Chapter2_Activity2_2Q_Activity extends AppCompatActivity {
     private long pageOpenTime;
     private long pageCloseTime;
 
+    private final NavigationDrawerHelper navigationDrawerHelper = new NavigationDrawerHelper(this);
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chapter2_activity2_2_questions);
@@ -69,6 +71,8 @@ public class Chapter2_Activity2_2Q_Activity extends AppCompatActivity {
         button_hint3 = findViewById(R.id.hint_3);
         button_hint4 = findViewById(R.id.hint_4);
         button_hint5 = findViewById(R.id.hint_5);
+
+        navigationDrawerHelper.setupNavigationDrawer(username);
 
         button_home.setOnClickListener(new View.OnClickListener() {
             @Override

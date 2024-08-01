@@ -31,6 +31,8 @@ public class Chapter2_Activity2_3_Activity extends AppCompatActivity {
     private Button button_next;
     private Button button_home;
 
+    private final NavigationDrawerHelper navigationDrawerHelper = new NavigationDrawerHelper(this);
+
 //    private EditText answer1;
 //    private EditText answer2;
 //    private EditText answer3;
@@ -68,6 +70,7 @@ public class Chapter2_Activity2_3_Activity extends AppCompatActivity {
 //            }
 //        });
 
+        navigationDrawerHelper.setupNavigationDrawer(username);
 
         button_home.setOnClickListener(new View.OnClickListener() {
             @Override

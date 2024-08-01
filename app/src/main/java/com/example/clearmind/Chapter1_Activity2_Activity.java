@@ -34,6 +34,7 @@ public class Chapter1_Activity2_Activity extends AppCompatActivity {
     private Button button_home;
     private long pageOpenTime;
     private long pageCloseTime;
+    private final NavigationDrawerHelper navigationDrawerHelper = new NavigationDrawerHelper(this);
 
 //    private String answer1;
 //    private String answer2;
@@ -70,6 +71,8 @@ public class Chapter1_Activity2_Activity extends AppCompatActivity {
         textView3.setText(Html.fromHtml(txt_textView3));
         textView4.setText(Html.fromHtml(txt_textView4));
         textView5.setText(Html.fromHtml(txt_textView5));
+
+        navigationDrawerHelper.setupNavigationDrawer(username);
 
         button_home.setOnClickListener(new View.OnClickListener() {
             @Override

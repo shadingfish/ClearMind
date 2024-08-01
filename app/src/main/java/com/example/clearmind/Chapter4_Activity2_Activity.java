@@ -50,6 +50,7 @@ public class Chapter4_Activity2_Activity extends AppCompatActivity {
     private EditText answer4;
     private long pageOpenTime;
     private long pageCloseTime;
+    private final NavigationDrawerHelper navigationDrawerHelper = new NavigationDrawerHelper(this);
 
     String[] star_name = {"Specific", "Trackable", "Achievable", "Relevant"};
     int[] star_image = {R.drawable.star_s, R.drawable.star_t, R.drawable.star_a, R.drawable.star_r};
@@ -146,6 +147,8 @@ public class Chapter4_Activity2_Activity extends AppCompatActivity {
                 }
             }
         });
+
+        navigationDrawerHelper.setupNavigationDrawer(username);
 
         button_home.setOnClickListener(new View.OnClickListener() {
             @Override

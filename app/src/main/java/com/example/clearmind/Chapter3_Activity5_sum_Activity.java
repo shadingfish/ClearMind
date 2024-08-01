@@ -30,6 +30,7 @@ public class Chapter3_Activity5_sum_Activity extends AppCompatActivity {
     private Button button_home;
     private long pageOpenTime;
     private long pageCloseTime;
+    private final NavigationDrawerHelper navigationDrawerHelper = new NavigationDrawerHelper(this);
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -134,7 +135,7 @@ public class Chapter3_Activity5_sum_Activity extends AppCompatActivity {
             }
         });
 
-
+        navigationDrawerHelper.setupNavigationDrawer(username);
 
         button_home.setOnClickListener(new View.OnClickListener() {
             @Override

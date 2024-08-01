@@ -41,6 +41,8 @@ public class Chapter2_Activity2_5_Activity extends AppCompatActivity {
     private long pageOpenTime;
     private long pageCloseTime;
 
+    private final NavigationDrawerHelper navigationDrawerHelper = new NavigationDrawerHelper(this);
+
 //    private EditText answer1;
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -98,6 +100,8 @@ public class Chapter2_Activity2_5_Activity extends AppCompatActivity {
 //            }
 //        });
 
+
+        navigationDrawerHelper.setupNavigationDrawer(username);
 
         button_home.setOnClickListener(new View.OnClickListener() {
             @Override

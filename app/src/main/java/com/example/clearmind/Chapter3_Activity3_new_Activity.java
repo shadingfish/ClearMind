@@ -49,6 +49,7 @@ public class Chapter3_Activity3_new_Activity extends AppCompatActivity {
 
     private long pageOpenTime;
     private long pageCloseTime;
+    private final NavigationDrawerHelper navigationDrawerHelper = new NavigationDrawerHelper(this);
 
     String[] meditation_name = {"The 20 Breath Meditation", "Relaxing Breathing (4-7-8) Exercise", "Mindful Daily Tasks", "Leaves on a Stream"};
 
@@ -156,7 +157,7 @@ public class Chapter3_Activity3_new_Activity extends AppCompatActivity {
         int width = metrics.widthPixels;
         int height = metrics.heightPixels;
 
-
+        navigationDrawerHelper.setupNavigationDrawer(username);
 
         button_home.setOnClickListener(new View.OnClickListener() {
             @Override

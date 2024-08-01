@@ -48,6 +48,7 @@ public class Chapter3_Activity3_Activity extends AppCompatActivity {
     private TextView button_transcript;
     private long pageOpenTime;
     private long pageCloseTime;
+    private final NavigationDrawerHelper navigationDrawerHelper = new NavigationDrawerHelper(this);
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -141,6 +142,7 @@ public class Chapter3_Activity3_Activity extends AppCompatActivity {
 //        // starts the video
 ////        videoView.start();
 
+        navigationDrawerHelper.setupNavigationDrawer(username);
 
         button_home.setOnClickListener(new View.OnClickListener() {
             @Override

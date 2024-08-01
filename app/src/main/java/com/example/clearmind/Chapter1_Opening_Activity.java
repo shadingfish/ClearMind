@@ -33,6 +33,8 @@ public class Chapter1_Opening_Activity extends AppCompatActivity {
     private long pageOpenTime;
     private long pageCloseTime;
 
+    private final NavigationDrawerHelper navigationDrawerHelper = new NavigationDrawerHelper(this);
+
 
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +55,8 @@ public class Chapter1_Opening_Activity extends AppCompatActivity {
                 "This section should take no more than 15 mins to complete. Let’s get started!";
 
         content.setText(Html.fromHtml(content_html));
+
+        navigationDrawerHelper.setupNavigationDrawer(username);
 
         button_home.setOnClickListener(new View.OnClickListener() {
             @Override
