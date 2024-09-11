@@ -77,7 +77,8 @@
                 android:onClick="openMain"
                 android:text="Login"
                 android:layout_marginTop="50dp"
-                app:backgroundTint="#5FB918" />
+                app:backgroundTint="#5FB918"
+                tools:ignore="UsingOnClickInXml" />
 
             <Button
                 android:id="@+id/button_register"

@@ -40,6 +40,10 @@
                 layout="@layout/nav_subtitle"/>
 
             <include
+                android:id="@+id/activity1_0"
+                layout="@layout/nav_subtitle"/>
+
+            <include
                 android:id="@+id/activity1_1"
                 layout="@layout/nav_subtitle"/>
 

@@ -37,21 +37,21 @@ public class NavigationDrawerHelper {
     private final DatabaseReference db = FirebaseDatabase.getInstance().getReference();
 
     private static final int[][] LINK_IDS = {
-            {R.id.opening1, R.id.activity1_1, R.id.activity1_2, R.id.activity1_3, R.id.activity1_4, R.id.activity1_5},
+            {R.id.opening1, R.id.activity1_0, R.id.activity1_1, R.id.activity1_2, R.id.activity1_3, R.id.activity1_4, R.id.activity1_5},
             {R.id.opening2, R.id.activity2_1, R.id.activity2_2, R.id.activity2_3, R.id.activity2_4, R.id.activity2_5, R.id.activity2_6},
             {R.id.opening3, R.id.activity3_1, R.id.activity3_2, R.id.activity3_3, R.id.activity3_4, R.id.activity3_5, R.id.activity3_6, R.id.activity3_7, R.id.activity3_8},
             {R.id.opening4, R.id.activity4_1, R.id.activity4_2, R.id.activity4_3, R.id.activity4_4, R.id.activity4_5, R.id.activity4_6}
     };
 
     private static final String[][] LINK_TEXTS = {
-            {"Opening", "Discover Procrastination Reasons", "Procrastination Tendencies", "Tendencies Questions", "How to Use the App", "Summary"},
+            {"Opening", "Prioritize Your Life Values", "Discover Procrastination Reasons", "Procrastination Tendencies", "Tendencies Questions", "How to Use the App", "Summary"},
             {"Opening", "Your Challenging Emotions", "Passengers On The Bus", "Example of Driving the bus", "Identify your passengers", "Willingness to Carry On", "Summary"},
             {"Opening", "Label the Passengers on the Bus", "Identify how it feels in your body", "Learn How to Meditate", "Make a Belief Statement", "Be aware of cognitive distortions", "Summary of cognitive distortions", "Reflection on cognitive distortions", "Summary"},
             {"Opening", "Introduce a New Framework", "Commit to a new goal", "Identify your passengers", "Willingness to carry on", "Willingness to Carry On", "Summary"}
     };
 
     private static final Class<?>[][] TARGET_ACTIVITIES = {
-            {Chapter1_Opening_Activity.class, Chapter1_Activity1_Activity.class, Chapter1_Activity2_Activity.class, Chapter1_Activity2_Question_Activity.class, Chapter1_Time_Activity.class, Chapter1_Summary_Activity.class},
+            {Chapter1_Opening_Activity.class, Chapter1_Activity0_Activity.class, Chapter1_Activity1_Activity.class, Chapter1_Activity2_Activity.class, Chapter1_Activity2_Question_Activity.class, Chapter1_Time_Activity.class, Chapter1_Summary_Activity.class},
             {Chapter2_Opening_Activity.class, Chapter2_Activity1_Activity.class, Chapter2_Activity2_1_Activity.class, Chapter2_Activity2_2Q_Activity.class, Chapter2_Diagram_Activity.class, Chapter2_Activity2_5_Activity.class, Chapter2_Summary_Activity.class},
             {Chapter3_Opening_Activity.class, Chapter3_Activity1_Activity.class, Chapter3_Activity2_Activity.class, Chapter3_Activity3_new_Activity.class, Chapter3_Activity4_Activity.class, Chapter3_Activity5_1_Activity.class, Chapter3_Activity5_sum_Activity.class, Chapter3_Activity6_Activity.class, Chapter3_Summary_Activity.class},
             {Chapter4_Opening_Activity.class, Chapter4_Activity1_Activity.class, Chapter4_Activity2_Activity.class, Chapter4_Activity3_Activity.class, Chapter4_Activity4_Activity.class, Chapter4_Activity5_Activity.class, Chapter4_Summary_Activity.class}
@@ -61,7 +61,7 @@ public class NavigationDrawerHelper {
 
     private static final String[][] ACTIVITIES_ORDER = {
             // Chapter 1
-            {"1_Opening", "2_Activity1_1", "3_Activity1_2_Discover", "4_Activity1_2_Questions", "6_Time_Management", "7_Summary"},
+            {"1_Opening", "2_Activity1_0", "2_Activity1_1", "3_Activity1_2_Discover", "4_Activity1_2_Questions", "6_Time_Management", "7_Summary"},
             // Chapter 2
             {"1_Opening", "2_Activity2_1", "3_Passengers_On_The_Bus", "4_Example", "6_Diagram", "7_Willingness_to_Carry_On", "8_Summary"},
             // Chapter 3

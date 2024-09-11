@@ -22,23 +22,22 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.HashMap;
 import java.util.Map;
 
-public class SignupActivity extends AppCompatActivity {
+public class SignupActivity1 extends AppCompatActivity {
 
     private EditText usernameInput;
     private EditText passwordInput;
     private DatabaseReference db;
-    private Button signup;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_signup1);
         WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
-        setContentView(R.layout.activity_signup);
-        this.usernameInput = (EditText)(findViewById(R.id.username_input));
-        this.passwordInput = (EditText)(findViewById(R.id.password_input));
+        this.usernameInput = findViewById(R.id.username_input);
+        this.passwordInput = findViewById(R.id.password_input);
         this.db = FirebaseDatabase.getInstance().getReference(); //get a reference of database
-        signup = findViewById(R.id.entry_button);
+        Button signup = findViewById(R.id.entry_button);
     }
 
     public void openMain(View view){
@@ -67,17 +66,17 @@ public class SignupActivity extends AppCompatActivity {
                     if (user == null){
                         // the username doesn't exist in db
                         // need to register
-                        Toast.makeText(SignupActivity.this,  "Welcome New User ", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(SignupActivity1.this,  "Welcome New User ", Toast.LENGTH_SHORT).show();
 //                        register(username, password);
                         toQuestionPage = true;
                     }
                     else
-                    { //the username exists in db
-                        Toast.makeText(SignupActivity.this,  "Existed username", Toast.LENGTH_SHORT).show();
+                    {
+                        Toast.makeText(SignupActivity1.this,  "Existed username", Toast.LENGTH_SHORT).show();
                     }
 
                     if (toQuestionPage){
-                        Intent intent = new Intent(getApplicationContext(), SecureQuestionActivity.class);
+                        Intent intent = new Intent(getApplicationContext(), SignupActivity2.class);
                         intent.putExtra("username", username);
                         intent.putExtra("password", password);
                         startActivity(intent);  //go to next page (activity)

@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <Button
-        android:id="@+id/button_navigation"
+        android:id="@+id/button_home"
         android:layout_gravity="center"
         android:layout_width="30dp"
         android:layout_height="wrap_content"
-        android:drawableTop="@drawable/baseline_format_list_bulleted_24"
+        android:drawableTop="@drawable/baseline_home_24"
         android:background="@android:color/transparent" />
 </merge>
