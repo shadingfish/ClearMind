@@ -1,18 +1,82 @@
+# Android Studio specific files
+.idea/
 *.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+
+# OS generated files
 .DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+Thumbs.db
+
+# Gradle specific files
+.gradle/
+build/
+**/build/
+**/*.apk
+**/captures/
+.externalNativeBuild/
+.cxx/
+
+# Local configuration file (SDK path, etc.)
 local.properties
 
+# Android specific files
+*.log
+*.hprof
+google-services.json
+output.json
 
-# test git push
+# Keystore files (remove if you’re keeping them in version control)
+*.jks
+*.keystore
+
+# Proguard mapping files
+mapping.txt
+
+# IntelliJ specific files
+misc.xml
+deploymentTargetDropDown.xml
+render.experimental.xml
+
+# Firebase crashlytics
+crashlytics.properties
+
+# Generated files
+generated/
+
+# Test result folders
+test-results/
+test-output/
+
+# Coverage reports
+coverage/
+
+# Lint
+lint/ 
+lint-report.html
+lint-results.xml
+
+# Ignore any .bak backup files
+*.bak
+
+# macOS related files
+*.swp
+
+# Custom exclusion for Android profiling and logs
+*.trace
+
+# Ignore .env or environment configuration files (if used)
+.env
+
+# Node modules if you use React Native or any node-based tool in the project
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# exclude for local testing
+/settings.gradle
+/build.gradle
