@@ -111,7 +111,7 @@
             android:layout_width="80dp"
             android:layout_height="90dp">
 
-            <com.example.clearmind.CustomProgressBar
+            <com.ucsdfhdsi.clearmind.CustomProgressBar
                 android:id="@+id/progressBar2"
                 android:layout_width="80dp"
                 android:layout_height="100dp"

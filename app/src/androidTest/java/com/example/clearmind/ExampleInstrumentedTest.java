@@ -1,4 +1,4 @@
-package com.example.clearmind;
+package com.ucsdfhdsi.clearmind;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
